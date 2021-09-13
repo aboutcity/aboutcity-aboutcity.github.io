@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "More Jekyll Themes!"
+title: "Test Page!"
 ---
 
 Test Page
