@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Text Formatting Examples"
+tags: [mapping]
 ---
 
 # Markdown Support
