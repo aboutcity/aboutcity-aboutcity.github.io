@@ -12,7 +12,7 @@ title: test2
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
 <style>
 body { margin: 0; padding: 0; }
-#map { top: 0; bottom: 0; width: 100%; hieght: 100%; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
 </style>
 </head>
 <body>
@@ -35,15 +35,6 @@ body { margin: 0; padding: 0; }
         center: [126.9321082186357,37.52439121202455], // starting position [lng, lat]
         zoom: 13 // starting zoom
     });
-
-    const layerList = document.getElementById('menu');
-    const inputs = layerList.getElementsByTagName('input');
-
-    for (const input of inputs) {
-        input.onclick = (layer) => {
-            const layerId = layer.target.id;
-            map.setStyle('mapbox://styles/mapbox/' + layerId);
-        };
     }
 </script>
 
