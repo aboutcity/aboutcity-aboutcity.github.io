@@ -3,29 +3,65 @@ layout: post
 title: test2
 ---
 <!DOCTYPE html>
-<html>
-<head>
-<title>국가공간정보포털 OpenAPI</title>
-<meta charset="utf-8">
- 
- 
- <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d11946.115031209421!2d126.920686460315!3d37.52874330437539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x357c9f3d84209cab%3A0xc7d7054dc2413179!2z67iM66Oo64uk7Jes7J2Y64-E7JetIFNlb3VsLCBZZW9uZ2RldW5ncG8tZ3UsIFllb3VpLWRvbmcsIDM1LTU!3m2!1d37.521355899999996!2d126.92497949999999!5e0!3m2!1sen!2skr!4v1631540975010!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
- 
- 
-<!-- 오픈API -->
-<script type="text/javaScript" src="http://www.nsdi.go.kr/lxportal/zcms/nsdi/platform/sdkGeoView.js.html?authkey=b82d40f919b147ef834e9bc58ce2094f"></script>  
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7a433184107044768a63073bd9f3a864 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
 </head>
- 
-<body>
- 
-<div id="sampleMap" style="height: 800px; width:100%;border: solid 1px;"></div>
- 
-<script>  
+<body>    
     
-// 지도생성
-var map = new pf.GeoView("sampleMap","vworld",true,true);   
-    
-</script>
- 
+            <div class="folium-map" id="map_7a433184107044768a63073bd9f3a864" ></div>
+        
 </body>
-</html>
+<script>    
+    
+            var map_7a433184107044768a63073bd9f3a864 = L.map(
+                "map_7a433184107044768a63073bd9f3a864",
+                {
+                    center: [37.541, 126.986],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bb07a30b98a24af19e768d5d9bf94d8c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7a433184107044768a63073bd9f3a864);
+        
+</script>
