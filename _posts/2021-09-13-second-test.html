@@ -99,7 +99,7 @@ var userCenter;
 $(document).ready(function(){
     
     // 지도생성
-    map = new pf.GeoView("sampleMap","baroE",true,true);
+    map = new pf.GeoView("container","vworld",true,true);
     
     map.baseMap.getView().setCenter(ol.proj.transform([948988.4139031649,1947273.5479532676], 'EPSG:3857', 'EPSG:3857'));//여의도
     map.baseMap.getView().setZoom(13);//지도 표출 레벨 설정
@@ -170,7 +170,7 @@ $(document).ready(function(){
                 
                 
                 //차트설정
-                map.setChart("sampleChart"    // 차트가 표시 될 DIV 태그의 아이디를 넣습니다.
+                map.setChart("well"    // 차트가 표시 될 DIV 태그의 아이디를 넣습니다.
                     ,"line"                // 표출 할 차트의 종류를 선택합니다.
                     ,obj_val            // 지도의 여러 레이어 중 차트에 표시 할 레이어의 이름을 입력 합니다.
                     ,column_name2            // 지도에 표출 한 공간정보에서 차트에 표출할 속성(숫자)의 이름을 넣습니다.(가로축)
