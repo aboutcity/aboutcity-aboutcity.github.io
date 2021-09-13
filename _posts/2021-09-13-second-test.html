@@ -12,7 +12,7 @@ title: test2
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
 <style>
 body { margin: 0; padding: 0; }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; hieght: 100%; }
 </style>
 </head>
 <body>
@@ -25,22 +25,8 @@ body { margin: 0; padding: 0; }
     }
 </style>
 
-<div id="map"></div>
-
-<div id="menu">
-    <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" checked="checked">
-    <!-- See a list of Mapbox-hosted public styles at -->
-    <!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
-    <label for="satellite-v9">satellite</label>
-    <input id="light-v10" type="radio" name="rtoggle" value="light">
-    <label for="light-v10">light</label>
-    <input id="dark-v10" type="radio" name="rtoggle" value="dark">
-    <label for="dark-v10">dark</label>
-    <input id="streets-v11" type="radio" name="rtoggle" value="streets">
-    <label for="streets-v11">streets</label>
-    <input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors">
-    <label for="outdoors-v11">outdoors</label>
-</div>
+<div id="map">
+	
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoiYWJvdXRjaXR5IiwiYSI6ImNrdGlxNzlyODE0ZXQydXBpaGV6b2RqdTQifQ.nnwlkcw4pAZQRBI2_wuXaQ';
     const map = new mapboxgl.Map({
