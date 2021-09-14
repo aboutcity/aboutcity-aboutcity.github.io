@@ -7,4 +7,4 @@ Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculu
 
 {% include image.html url="http://www.gratisography.com" image="projects/proj-2/stretch.jpg" %}
 
-<iframe src="https://aboutcity.github.io/projects/new.html" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe src="https://aboutcity.github.io/maps/test.html" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
