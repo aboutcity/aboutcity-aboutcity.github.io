@@ -5,37 +5,22 @@ title: test2
 <!DOCTYPE html>
 <html>
 <head>
+<title>국가공간정보포털 OpenAPI</title>
 <meta charset="utf-8">
-<title>Change a map's style</title>
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
-<style>
-body { margin: 0; padding: 0; }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; height: 800px; }
-</style>
+<!-- 오픈API -->
+<script type="text/javaScript" src="http://www.nsdi.go.kr/lxportal/zcms/nsdi/platform/sdkGeoView.js.html?authkey=a0f71fc314b54e53b0baf92eb8b43abf"></script>  
 </head>
+ 
 <body>
-<style>
-    #menu {
-        position: absolute;
-        background: #efefef;
-        padding: 10px;
-        font-family: 'Open Sans', sans-serif;
-    }
-</style>
-
-<div id="map">
-	
-<script>
-	mapboxgl.accessToken = 'pk.eyJ1IjoiYWJvdXRjaXR5IiwiYSI6ImNrdGlxNzlyODE0ZXQydXBpaGV6b2RqdTQifQ.nnwlkcw4pAZQRBI2_wuXaQ';
-    const map = new mapboxgl.Map({
-        container: 'map', // container ID
-        style: 'mapbox://styles/aboutcity/cktiwp8pw3pdt18qt51wjreoa', // style URL
-        center: [126.9321082186357,37.52439121202455], // starting position [lng, lat]
-        zoom: 13 // starting zoom
-    })
+ 
+<div id="sampleMap" style="height: 800px; width:100%;border: solid 1px;"></div>
+ 
+<script>  
+    
+// 지도생성
+var map = new pf.GeoView("sampleMap","vworld",true,true);   
+    
 </script>
-
+ 
 </body>
 </html>
